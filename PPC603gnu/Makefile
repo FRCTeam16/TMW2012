@@ -32,7 +32,7 @@ MODE_DIR := NonDebug
 endif
 OBJ_DIR := .
 WS_ROOT_DIR := C:/WindRiver/workspace
-PRJ_ROOT_DIR := C:/Users/clemenj/Desktop/Beta\ Program/071212\ Windriver\ Backup/2012_Bot_Code/workspace/TMW2012
+PRJ_ROOT_DIR := C:/Users/clemenj/Desktop/Beta\ Program/071212\ Windriver\ Backup/2012_Bot_Code/workspace/Test/TMW2012
 
 
 

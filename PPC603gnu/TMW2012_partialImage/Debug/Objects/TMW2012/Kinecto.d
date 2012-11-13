@@ -1,6 +1,6 @@
 TMW2012_partialImage/Debug/Objects/TMW2012/Kinecto.o:  \
- C:/Users/clemenj/Desktop/Beta\ Program/071212\ Windriver\ Backup/2012_Bot_Code/workspace/TMW2012/Kinecto.cpp \
-  C:/Users/clemenj/Desktop/Beta\ Program/071212\ Windriver\ Backup/2012_Bot_Code/workspace/TMW2012/Kinecto.h \
+ C:/Users/clemenj/Desktop/Beta\ Program/071212\ Windriver\ Backup/2012_Bot_Code/workspace/Test/TMW2012/Kinecto.cpp \
+  C:/Users/clemenj/Desktop/Beta\ Program/071212\ Windriver\ Backup/2012_Bot_Code/workspace/Test/TMW2012/Kinecto.h \
   C:/WindRiver/vxworks-6.3/target/h/WPILib/WPILib.h \
   C:/WindRiver/vxworks-6.3/target/h/string.h \
   C:/WindRiver/vxworks-6.3/target/h/types/vxANSI.h \
@@ -381,7 +381,7 @@ TMW2012_partialImage/Debug/Objects/TMW2012/Kinecto.o:  \
   C:/WindRiver/vxworks-6.3/target/h/WPILib/WPIErrors.h \
   C:/WindRiver/vxworks-6.3/target/h/math.h
 
-C:/Users/clemenj/Desktop/Beta\ Program/071212\ Windriver\ Backup/2012_Bot_Code/workspace/TMW2012/Kinecto.h:
+C:/Users/clemenj/Desktop/Beta\ Program/071212\ Windriver\ Backup/2012_Bot_Code/workspace/Test/TMW2012/Kinecto.h:
 
 C:/WindRiver/vxworks-6.3/target/h/WPILib/WPILib.h:
 

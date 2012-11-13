@@ -1,6 +1,6 @@
 TMW2012_partialImage/Debug/Objects/TMW2012/Steer.o:  \
- C:/Users/clemenj/Desktop/Beta\ Program/071212\ Windriver\ Backup/2012_Bot_Code/workspace/TMW2012/Steer.cpp \
-  C:/Users/clemenj/Desktop/Beta\ Program/071212\ Windriver\ Backup/2012_Bot_Code/workspace/TMW2012/Steer.h \
+ C:/Users/clemenj/Desktop/Beta\ Program/071212\ Windriver\ Backup/2012_Bot_Code/workspace/Test/TMW2012/Steer.cpp \
+  C:/Users/clemenj/Desktop/Beta\ Program/071212\ Windriver\ Backup/2012_Bot_Code/workspace/Test/TMW2012/Steer.h \
   C:/WindRiver/vxworks-6.3/target/h/math.h \
   C:/WindRiver/vxworks-6.3/target/h/types/vxANSI.h \
   C:/WindRiver/vxworks-6.3/target/h/types/vxCpu.h \
@@ -96,7 +96,7 @@ TMW2012_partialImage/Debug/Objects/TMW2012/Steer.o:  \
   C:/WindRiver/vxworks-6.3/target/h/base/b_struct_timespec.h \
   c:/windriver/gnu/3.4.4-vxworks-6.3/x86-win32/lib/gcc/../../../x86-win32/include/c++/3.4.4/xlocinfo.h
 
-C:/Users/clemenj/Desktop/Beta\ Program/071212\ Windriver\ Backup/2012_Bot_Code/workspace/TMW2012/Steer.h:
+C:/Users/clemenj/Desktop/Beta\ Program/071212\ Windriver\ Backup/2012_Bot_Code/workspace/Test/TMW2012/Steer.h:
 
 C:/WindRiver/vxworks-6.3/target/h/math.h:
 

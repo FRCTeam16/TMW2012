@@ -25,40 +25,40 @@ bool Kinecto::IsTracked()
 //returns 720.0 if skeleton is not tracked
 float Kinecto::GetRForeArmAngle()
 {
-	Angle = 720.0;
+	AngleAB = 720.0;
 	
 	if(this->IsTracked() == true)
 	{
-		Angle = this->AngleXY(kinect->GetSkeleton().GetElbowRight(), kinect->GetSkeleton().GetWristRight(), false);
+		AngleAB = this->AngleXY(kinect->GetSkeleton().GetElbowRight(), kinect->GetSkeleton().GetWristRight(), false);
 		
-		if(Angle > 90)
-			Angle = 90;
-		if(Angle < -90)
-			Angle = -90;
+		if(AngleAB > 90)
+			AngleAB = 90;
+		if(AngleAB < -90)
+			AngleAB = -90;
 	}
 	
-	RForeArmAng = Angle;
-	return Angle;
+	RForeArmAng = AngleAB;
+	return AngleAB;
 }
 
 //returns the angle from the left elbow to the left wrist
 //returns 720.0 if skeleton is not tracked
 float Kinecto::GetLForeArmAngle()
 {
-	Angle = 720.0;
+	AngleAB = 720.0;
 	
 	if(this->IsTracked() == true)
 	{
-		Angle = this->AngleXY(kinect->GetSkeleton().GetElbowLeft(), kinect->GetSkeleton().GetWristLeft(), true);
+		AngleAB = this->AngleXY(kinect->GetSkeleton().GetElbowLeft(), kinect->GetSkeleton().GetWristLeft(), true);
 		
-		if(Angle > 90)
-			Angle = 90;
-		if(Angle < -90)
-			Angle = -90;
+		if(AngleAB > 90)
+			AngleAB = 90;
+		if(AngleAB < -90)
+			AngleAB = -90;
 	}
 	
-	LForeArmAng = Angle;
-	return Angle;	
+	LForeArmAng = AngleAB;
+	return AngleAB;	
 }
 
 bool Kinecto::IsStanding()
