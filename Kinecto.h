@@ -34,7 +34,6 @@ private:
 	
 	float RForeArmAng;
 	float LForeArmAng;
-	float AngleAB;
 	
 };
 
