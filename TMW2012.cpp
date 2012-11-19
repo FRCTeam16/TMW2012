@@ -47,7 +47,7 @@ private:
 	
 //	CameraAim Camera;
 	
-	NetworkTable* CamTable;
+//	NetworkTable* CamTable;
 	
 	//Autonomous enumerations & control variables
 	typedef enum {Kinect = 0, Stay, Bridge, Eater, Super}AutoTW;
@@ -179,7 +179,7 @@ TMW2012::TMW2012():
 	//Compressor
 	AirPump.Start();
 	
-	CamTable = NetworkTable::GetTable("camera");
+//	CamTable = NetworkTable::GetTable("camera");
 /*	
 	//Camera
 	Camera = &AxisCamera::GetInstance();
@@ -252,8 +252,8 @@ void TMW2012::DisabledInit()
 	CamXError = 0;
 	CamErTime = 0.0;
 
-	if(SmartDashboard::GetBoolean("Found") == true)
-		ACamTarHeight = SmartDashboard::GetNumber("TargetHeight");
+//	if(SmartDashboard::GetBoolean("Found") == true)
+//		ACamTarHeight = SmartDashboard::GetNumber("TargetHeight");
 
 	AxisOffset = 0.0;
 	
@@ -289,8 +289,8 @@ void TMW2012::AutonomousInit()
 	CamXError = 0;
 	CamErTime = 0.0;
 
-	if(SmartDashboard::GetBoolean("Found") == true)
-		ACamTarHeight = SmartDashboard::GetNumber("TargetHeight");
+//	if(SmartDashboard::GetBoolean("Found") == true)
+//		ACamTarHeight = SmartDashboard::GetNumber("TargetHeight");
 	
 	AxisOffset = 0.0;
 	
@@ -454,7 +454,7 @@ void TMW2012::DisabledPeriodic()
 	if(stick.GetRawButton(8) == true)
 		this->SmDb(true);
 	
-	Catapult.CamLightsOn(SmartDashboard::GetNumber("TargetXFromCenter"), 3);
+//	Catapult.CamLightsOn(SmartDashboard::GetNumber("TargetXFromCenter"), 3);
 }
 void TMW2012::AutonomousPeriodic()
 {
@@ -935,14 +935,14 @@ void TMW2012::AutonomousPeriodic()
 				PosCon = true;
 				Drive.SetSteerMode(Swerve::A);
 				
-				if(UpdateTarget == false && SmartDashboard::GetBoolean("Found") == true)
+/*				if(UpdateTarget == false && SmartDashboard::GetBoolean("Found") == true)
 				{
 					CamXError = SmartDashboard::GetNumber("TargetXFromCenter");
 					CamErTime = GetClock();
 					UpdateTarget = true;
 					Drive.ZeroWhPos();
 				}
-				
+*/				
 				//Execute
 				if(Drive.AreModsOnTarget() == true && UpdateTarget == true)	//if modules are in correct position
 				{
@@ -968,7 +968,7 @@ void TMW2012::AutonomousPeriodic()
 				//Catapult Control
 				Shoot = false;
 				
-				if(abs(SmartDashboard::GetNumber("TargetXFromCenter")) < 4)
+/*				if(abs(SmartDashboard::GetNumber("TargetXFromCenter")) < 4)
 				{
 					if(ATime + .5 < GetClock())
 					{
@@ -980,9 +980,9 @@ void TMW2012::AutonomousPeriodic()
 				}
 				else
 					ATime = GetClock();
-				
+*/				
 				cout << "CamXError = " << CamXError;
-				cout << "TarX2Cen = " << SmartDashboard::GetNumber("TargetXFromCenter");
+//				cout << "TarX2Cen = " << SmartDashboard::GetNumber("TargetXFromCenter");
 				cout << ", BotSpd = " << BotSpd;
 				cout << ", PosError = " << Drive.GetPosError(BotSpd);
 				cout << ", AStepInit = " << AStepInit;
@@ -1274,7 +1274,7 @@ void TMW2012::TeleopPeriodic()
 */		
 		//int CamXErIn = SmartDashboard::GetInstance()->GetInt("TargetXFromCenter");
 		
-		if(UpdateTarget == false)
+/*		if(UpdateTarget == false)
 		{
 			if(!SmartDashboard::GetBoolean("IgnoreCamData")  && SmartDashboard::GetBoolean("Found") == true)
 				CamXError = SmartDashboard::GetNumber("TargetXFromCenter");
@@ -1284,7 +1284,7 @@ void TMW2012::TeleopPeriodic()
 			UpdateTarget = true;
 			Drive.ZeroWhPos();
 		}
-		
+*/		
 		//Execute
 		if(Drive.AreModsOnTarget() == true && UpdateTarget == true)	//if modules are in correct position
 		{
@@ -1520,7 +1520,7 @@ void TMW2012::TeleopPeriodic()
 		if(GPad.GetRawButton(3) == true)
 		{
 			//Catapult.SetPos(TeleCatPos);	//85
-			Catapult.SetPos(SmartDashboard::GetNumber("Proportional") + 85);
+//			Catapult.SetPos(SmartDashboard::GetNumber("Proportional") + 85);
 			Catapult.ShortShot(false);
 		}
 
@@ -1582,9 +1582,9 @@ void TMW2012::TeleopPeriodic()
 	if(stick.GetRawButton(8) == true)
 		this->SmDb(true);
 	
-	cout << "TargetHeight = " << SmartDashboard::GetNumber("TargetHeight") << endl;
+//	cout << "TargetHeight = " << SmartDashboard::GetNumber("TargetHeight") << endl;
 	
-	Catapult.CamLightsOn(SmartDashboard::GetNumber("TargetXFromCenter"), 3);
+//	Catapult.CamLightsOn(SmartDashboard::GetNumber("TargetXFromCenter"), 3);
 }
 
 /*
@@ -1634,11 +1634,13 @@ void TMW2012::UseCamPID(bool yes)
 //Gets Camera info from SmartDashboard
 int TMW2012::GetCamError()
 {
-	return SmartDashboard::GetNumber("TargetXFromCenter");
+//	return SmartDashboard::GetNumber("TargetXFromCenter");
+	return 0;
 }
 int TMW2012::GetCamArea()
 {
-	return SmartDashboard::GetNumber("TargetArea");
+//	return SmartDashboard::GetNumber("TargetArea");
+	return 0;
 }
 //Returns true if human player signals for robot to stop 
 bool TMW2012::IsKinectStop()
